@@ -1,0 +1,190 @@
+{
+  "requestId": "Request code",
+  "generic": {
+    "title": "The operation could not be completed",
+    "description": "The system could not process the request.",
+    "recommendation": "Try again. If the error repeats, contact support and quote the request code."
+  },
+  "queued": {
+    "title": "You are in the queue",
+    "description": "The system is under peak load: your request was accepted and will be processed in turn.",
+    "recommendation": "Keep this page open — the result will appear automatically."
+  },
+  "code": {
+    "IAM_FORBIDDEN": {
+      "title": "No access to this section",
+      "description": "The current working context does not grant rights to this section.",
+      "recommendation": "Switch the working context or request access from the system administrator."
+    },
+    "IAM_UNAUTHORIZED": {
+      "title": "Session ended",
+      "description": "The session expired and the system signed you out.",
+      "recommendation": "Sign in again — unsaved changes will have to be entered once more."
+    },
+    "NOT_FOUND": {
+      "title": "Record not found",
+      "description": "The object was deleted or the link is out of date.",
+      "recommendation": "Return to the list and open the record again."
+    },
+    "NETWORK_OFFLINE": {
+      "title": "Connection lost",
+      "description": "The server is unreachable and changes were not saved.",
+      "recommendation": "Check your network connection and retry — the data you entered stays on screen."
+    },
+    "SERVER_ERROR": {
+      "title": "The server did not respond",
+      "description": "An error on the system side; no data was lost.",
+      "recommendation": "Retry in a minute. If the error repeats, quote the request code to support."
+    },
+    "INTEGRATION_UNAVAILABLE": {
+      "title": "External service unavailable",
+      "description": "A dependent service did not respond; the rest of your work continues.",
+      "recommendation": "Reload this block later — other sections remain available."
+    },
+    "REG_WINDOW_CLOSED": {
+      "title": "Registration window is closed",
+      "description": "Registration for your year and programme is not open right now.",
+      "recommendation": "The registrar's office publishes registration dates. Contact them if the window should be open."
+    },
+    "REG_CREDITS_OUT_OF_RANGE": {
+      "title": "Credits out of the allowed range",
+      "description": "With this change, the total credits in your plan would fall outside the limits set for the semester.",
+      "recommendation": "Remove an elective or add the missing credits. Only the registrar's office can allow an overload."
+    },
+    "REG_PREREQ_NOT_MET": {
+      "title": "Prerequisites not completed",
+      "description": "You need to complete earlier courses before enrolling in this one.",
+      "recommendation": "Contact your advisor: they can waive the requirement with a comment."
+    },
+    "REG_OFFERING_FULL": {
+      "title": "No seats left with this teacher",
+      "description": "The group filled up while you were choosing.",
+      "recommendation": "Join the waitlist or choose another teacher."
+    },
+    "REG_DUPLICATE_DISCIPLINE": {
+      "title": "Course already in your plan",
+      "description": "A plan cannot contain two groups of the same course.",
+      "recommendation": "To move to another teacher, use “Change teacher”."
+    },
+    "REG_LANGUAGE_MISMATCH": {
+      "title": "Language of instruction does not match",
+      "description": "The group's language is not one of your languages of instruction.",
+      "recommendation": "Choose a group in your language of instruction or contact the registrar's office."
+    },
+    "REG_PLAN_LOCKED": {
+      "title": "The study plan cannot be changed",
+      "description": "The plan has been sent to your advisor or already approved.",
+      "recommendation": "Ask your advisor to return the plan, or wait for the add/drop period."
+    },
+    "REG_MANDATORY_DISCIPLINE": {
+      "title": "A mandatory course cannot be removed",
+      "description": "Mandatory courses for the semester are always part of the plan.",
+      "recommendation": "You can change the teacher if there are several."
+    },
+    "REG_TEACHER_NOT_CHOSEN": {
+      "title": "No teacher chosen",
+      "description": "A teacher has not yet been chosen for one of the mandatory courses.",
+      "recommendation": "Choose a teacher and send the plan again."
+    },
+    "REG_PLAN_NOT_SUBMITTED": {
+      "title": "Study plan is not awaiting approval",
+      "description": "You can only approve or return a plan the student has sent to their advisor.",
+      "recommendation": "Refresh the list — another staff member may have approved it, or the student has not sent it yet."
+    },
+    "REG_PLAN_HAS_ERRORS": {
+      "title": "The study plan has issues",
+      "description": "A plan with check errors cannot be approved.",
+      "recommendation": "Waive the prerequisite with a justification, or return the plan to the student with a comment."
+    },
+    "REG_OFFERING_CLOSED": {
+      "title": "The group is already closed",
+      "description": "This section was closed earlier and cannot be closed again.",
+      "recommendation": "Refresh the monitor page."
+    },
+    "REG_REASSIGN_INVALID": {
+      "title": "Cannot move students there",
+      "description": "The selected group is closed or belongs to another course.",
+      "recommendation": "Choose an open group of the same course, or close without moving."
+    },
+    "SCH_LESSON_CANCELLED": {
+      "title": "The class is cancelled",
+      "description": "A cancelled class cannot be marked as held.",
+      "recommendation": "If the class did take place, inform the department."
+    },
+    "SCH_LESSON_IN_FUTURE": {
+      "title": "The class has not happened yet",
+      "description": "You can mark a class as held on the day or later.",
+      "recommendation": "Come back to mark it after the class."
+    },
+    "SCH_CHANGE_REQUEST_EXISTS": {
+      "title": "Request already sent",
+      "description": "There is already a substitution request for this class.",
+      "recommendation": "You can see its status under “Substitution requests”."
+    },
+    "SCH_CONFLICT_TEACHER": {
+      "title": "The teacher is busy",
+      "description": "The teacher already has a class at this time (H-01).",
+      "recommendation": "Choose another slot — “Find a slot” lists only free ones."
+    },
+    "SCH_CONFLICT_GROUP": {
+      "title": "The group is busy",
+      "description": "The group or its subgroup already has a class at this time (H-02).",
+      "recommendation": "Choose another slot — “Find a slot” lists only free ones."
+    },
+    "SCH_CONFLICT_ROOM": {
+      "title": "The room is taken",
+      "description": "Another class already uses this room at this time (H-03).",
+      "recommendation": "Choose another room with “Find a room”."
+    },
+    "SCH_ROOM_CAPACITY": {
+      "title": "The room is too small",
+      "description": "The room has fewer seats than students in the class (H-04).",
+      "recommendation": "Choose a larger room with “Find a room”."
+    },
+    "SCH_ROOM_KIND": {
+      "title": "The room does not fit",
+      "description": "The room type does not match the class (H-05).",
+      "recommendation": "Choose a room of the right type with “Find a room”."
+    },
+    "SCH_UNAVAILABLE": {
+      "title": "Time unavailable",
+      "description": "The teacher, group or room is unavailable at this time (H-06).",
+      "recommendation": "Choose another slot."
+    },
+    "SCH_VERSION_LOCKED": {
+      "title": "The version cannot be changed",
+      "description": "The version is not a draft.",
+      "recommendation": "Changes to an approved version go through substitutions and rescheduling, or a new version."
+    },
+    "SCH_HARD_CONFLICTS": {
+      "title": "There are hard violations",
+      "description": "A timetable with hard violations cannot be approved or published.",
+      "recommendation": "Resolve the conflicts manually or run the solver."
+    },
+    "SCH_SOLVE_RUNNING": {
+      "title": "The solver is running",
+      "description": "The version cannot be changed while the solver builds the timetable.",
+      "recommendation": "Wait for it to finish or stop the solver."
+    },
+    "SCH_LESSON_PINNED": {
+      "title": "The class is pinned",
+      "description": "A pinned class cannot be moved (H-12).",
+      "recommendation": "Unpin the class to move it."
+    },
+    "REG_SEATS_BELOW_TAKEN": {
+      "title": "Fewer seats than enrolled students",
+      "description": "You cannot reduce the number of seats below the students already enrolled.",
+      "recommendation": "Keep at least as many seats as enrolled students, or open another group."
+    },
+    "SCH_CHANGE_DECIDED": {
+      "title": "Already decided",
+      "description": "The department has already decided on this request.",
+      "recommendation": "Refresh the list of requests."
+    },
+    "SCH_REVIEW_PENDING": {
+      "title": "Not all departments have approved",
+      "description": "A version can be approved once all departments have reviewed it.",
+      "recommendation": "Wait for the review, or contact the departments that left comments."
+    }
+  }
+}

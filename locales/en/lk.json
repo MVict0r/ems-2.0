@@ -1,0 +1,17 @@
+{
+  "nav": {
+    "dashboard": "Home",
+    "profile": "Personal data",
+    "applications": "My applications",
+    "documents": "Documents",
+    "exams": "Exams",
+    "queue": "Electronic queue",
+    "payments": "Payments",
+    "messages": "Messages",
+    "help": "Help"
+  },
+  "auth": {
+    "title": "Sign in to the applicant portal",
+    "description": "Sign in with your IIN, confirmed by SMS."
+  }
+}

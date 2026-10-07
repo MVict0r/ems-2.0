@@ -1,0 +1,17 @@
+{
+  "bar": {
+    "label": "Demo",
+    "persona": "View as",
+    "reset": "Reset data",
+    "hint": "Sample data that lives until the page is reloaded. Actions taken in one role are immediately visible in the others."
+  },
+  "persona": {
+    "student": "Student · Dana Tolegenova",
+    "teacher": "Teacher · T. B. Ospanov",
+    "advisor": "Advisor · T. B. Ospanov",
+    "registrar": "Registrar's office · A. Sarsenova",
+    "display": "Building display",
+    "scheduler": "Timetable scheduler · A. Zhumabekova",
+    "depthead": "Head of department · Y. K. Nurpeissov"
+  }
+}

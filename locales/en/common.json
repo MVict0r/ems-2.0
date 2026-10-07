@@ -1,0 +1,58 @@
+{
+  "app": {
+    "lk": "Applicant portal",
+    "admin": "Staff workspace",
+    "student": "Personal account"
+  },
+  "lang": {
+    "label": "Interface language"
+  },
+  "theme": {
+    "title": "Appearance",
+    "scheme": {
+      "label": "Theme",
+      "system": "Match system",
+      "light": "Light",
+      "dark": "Dark"
+    },
+    "density": {
+      "label": "Density",
+      "compact": "Compact",
+      "default": "Default",
+      "comfortable": "Comfortable"
+    },
+    "fontSize": "Font size",
+    "lineHeight": "Line spacing",
+    "highContrast": "High contrast",
+    "reset": "Restore defaults"
+  },
+  "action": {
+    "retry": "Retry",
+    "cancel": "Cancel",
+    "copy": "Copy code",
+    "copied": "Copied",
+    "signIn": "Sign in",
+    "signOut": "Sign out",
+    "toHome": "Go to home",
+    "openSettings": "Settings"
+  },
+  "nav": {
+    "skipToContent": "Skip to content",
+    "menu": "Menu",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "sections": "Sections"
+  },
+  "context": {
+    "label": "Working context",
+    "switch": "Switch working context",
+    "none": "No context selected"
+  },
+  "state": {
+    "loading": "Loading",
+    "placeholder": {
+      "title": "Section under development",
+      "description": "This screen arrives in a later stage. The shell, navigation and permission checks already work."
+    }
+  }
+}

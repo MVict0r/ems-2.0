@@ -1,0 +1,366 @@
+{
+  "nav": {
+    "registration": "My study plan",
+    "catalog": "Elective catalogue",
+    "discipline": "Choose a teacher",
+    "history": "Study plan history",
+    "schedule": "Timetable",
+    "lesson": "Class",
+    "requests": "Substitution requests"
+  },
+  "page": {
+    "notFound": "Page not found"
+  },
+  "lang": {
+    "kk": "Kazakh",
+    "ru": "Russian",
+    "en": "English"
+  },
+  "kind": {
+    "MANDATORY": "Mandatory",
+    "ELECTIVE_UNIVERSITY": "Elective",
+    "ELECTIVE_FREE": "Free elective"
+  },
+  "cycle": {
+    "OOD": "GE — general education",
+    "BD": "BS — basic subjects",
+    "PD": "MS — major subjects"
+  },
+  "format": {
+    "ONSITE": "On campus",
+    "ONLINE": "Online",
+    "HYBRID": "Hybrid"
+  },
+  "prereq": {
+    "title": "Prerequisites",
+    "none": "No prerequisites",
+    "met": "completed",
+    "notMet": "not completed",
+    "waived": "waived by advisor"
+  },
+  "plan": {
+    "title": "My study plan",
+    "loading": "Loading study plan",
+    "summary": "Study plan summary",
+    "statusLabel": "Status",
+    "status": {
+      "DRAFT": "Draft",
+      "SUBMITTED": "Awaiting approval",
+      "ADVISOR_APPROVED": "Approved",
+      "LOCKED": "Closed"
+    },
+    "credits": {
+      "label": "Credits",
+      "value": "{{total}} / {{min}}–{{max}}",
+      "spoken": "{{total}} taken, allowed from {{min}} to {{max}}",
+      "hint": "Waitlisted courses do not count"
+    },
+    "window": {
+      "label": "Registration window",
+      "open": "Open until {{date}}",
+      "closed": "Closed"
+    },
+    "advisor": "Advisor",
+    "locked": {
+      "SUBMITTED": {
+        "title": "Study plan sent to your advisor on {{date}}",
+        "description": "You cannot change the plan while your advisor reviews it. If something needs fixing, contact your advisor and ask them to return the plan."
+      },
+      "ADVISOR_APPROVED": {
+        "title": "Study plan approved",
+        "description": "Changes are only possible during add/drop in the first two weeks of the semester."
+      },
+      "LOCKED": {
+        "title": "Study plan closed",
+        "description": "Registration for the semester is over. Contact the registrar's office about any changes."
+      }
+    },
+    "windowClosed": {
+      "title": "Registration window is closed",
+      "description": "You cannot change the study plan now. The registrar's office publishes registration dates."
+    },
+    "sections": {
+      "mandatory": "Mandatory courses",
+      "mandatoryHint": "Added to the plan automatically. Where there are several teachers, you choose.",
+      "electives": "Electives",
+      "electivesHint": "Chosen from the elective catalogue of your programme."
+    },
+    "emptyElectives": "No electives chosen yet.",
+    "toCatalog": "Open the elective catalogue",
+    "toHistory": "Study plan history",
+    "item": {
+      "credits": "Credits",
+      "teacher": "Teacher",
+      "language": "Language of instruction",
+      "format": "Format",
+      "notChosen": "Not chosen",
+      "chooseTeacher": "Choose a teacher",
+      "changeTeacher": "Change teacher",
+      "status": {
+        "SELECTED": "Seat secured",
+        "WAITLIST": "Waitlist · {{position}}",
+        "CONFIRMED": "Confirmed",
+        "DROPPED": "Dropped"
+      },
+      "remove": {
+        "action": "Remove from plan",
+        "title": "Remove “{{name}}” from your plan?",
+        "description": "Your seat will be released and given to the first student on the waitlist. You can only add the course back if seats remain.",
+        "confirm": "Remove from plan",
+        "done": "“{{name}}” removed from your plan"
+      }
+    },
+    "checks": {
+      "title": "Check before sending",
+      "errors": "Fix before sending",
+      "warnings": "Please note",
+      "ok": "No issues — the plan can be sent to your advisor",
+      "rule": "Rule {{rule}}",
+      "goTo": "Go to course",
+      "code": {
+        "CREDITS_BELOW_MIN": "Credits taken: {{total}}, but at least {{min}} are required. Add electives from the catalogue.",
+        "CREDITS_ABOVE_MAX": "Credits in the plan: {{total}}, but no more than {{max}} are allowed. Remove an elective or contact the registrar's office.",
+        "PREREQ_NOT_MET": "“{{name}}”: prerequisites not completed. Contact your advisor.",
+        "TEACHER_NOT_CHOSEN": "“{{name}}”: choose a teacher.",
+        "WAITLIST_PENDING": "“{{name}}”: you are on the waitlist, position {{position}}. Credits count once a seat frees up.",
+        "OFFERING_BELOW_MIN": "“{{name}}”: {{taken}} enrolled, minimum is {{min}}. If the group does not fill, you will be offered another one."
+      }
+    },
+    "submit": {
+      "action": "Send to advisor",
+      "blocked": "Sending becomes available once the issues listed above are fixed.",
+      "title": "Send the study plan to your advisor?",
+      "description": "You cannot change the plan while your advisor reviews it. If your advisor returns it, you can edit it again.",
+      "confirm": "Send to advisor",
+      "done": "Study plan sent to your advisor"
+    },
+    "returned": {
+      "title": "Advisor {{advisor}} returned your study plan for changes"
+    }
+  },
+  "catalog": {
+    "title": "Elective catalogue",
+    "loading": "Loading catalogue",
+    "filters": "Filters",
+    "search": "Search by title or code",
+    "cycleLabel": "Cycle",
+    "cycleAll": "All cycles",
+    "languageLabel": "Language of instruction",
+    "languageAll": "All languages",
+    "found": "Courses found: {{count}}",
+    "empty": {
+      "title": "Nothing found",
+      "description": "Change the query or reset the filters.",
+      "reset": "Reset filters"
+    },
+    "entry": {
+      "credits": "Credits",
+      "cycle": "Cycle",
+      "languages": "Languages of instruction",
+      "seatsFree": "Seats available",
+      "teachers": "Teachers",
+      "inPlan": "In your plan",
+      "open": "Choose a teacher"
+    },
+    "toPlan": "Back to my study plan"
+  },
+  "discipline": {
+    "loading": "Loading sections",
+    "toPlan": "Back to my study plan",
+    "toCatalog": "Back to the elective catalogue",
+    "about": "About the course",
+    "credits": "Credits",
+    "cycle": "Cycle",
+    "kind": "Type",
+    "department": "Department",
+    "prereqBlocked": {
+      "title": "Prerequisites not completed",
+      "description": "You cannot enrol in this course. Your advisor can waive the requirement with a comment — contact them."
+    },
+    "readOnly": {
+      "title": "You cannot change your choice now",
+      "description": "The study plan has been sent to your advisor, approved, or the registration window is closed."
+    },
+    "offerings": "Choose a teacher",
+    "offeringsHint": "You choose a teacher together with their group: each has its own language, format and number of seats.",
+    "noOfferings": {
+      "title": "No sections yet",
+      "description": "The department has not yet assigned teachers to this course for the semester."
+    }
+  },
+  "offering": {
+    "seats": "Seats",
+    "seatsValue": "{{taken}} / {{max}}",
+    "seatsSpoken": "{{taken}} of {{max}} taken",
+    "waitlist": "On the waitlist: {{count}}",
+    "belowMin": "The group opens once at least {{min}} students enrol",
+    "language": "Language of instruction",
+    "format": "Format",
+    "rating": "Student rating",
+    "ratingValue": "{{value}} out of 5",
+    "languageNotAllowed": "Unavailable: this language is not one of your languages of instruction",
+    "chosen": "Your choice",
+    "waitlisted": "Waitlist · {{position}}",
+    "choose": "Choose",
+    "chooseWaitlist": "Join the waitlist",
+    "replaceToWaitlist": {
+      "title": "Move to the waitlist?",
+      "description": "This teacher has no seats left. Your seat with {{teacher}} will be released immediately, and a new one appears only if someone drops out.",
+      "confirm": "Move to the waitlist"
+    },
+    "selectedAnnounce": "Teacher chosen: {{teacher}}",
+    "waitlistAnnounce": "You are on the waitlist for {{teacher}}, position {{position}}"
+  },
+  "history": {
+    "title": "Study plan history",
+    "loading": "Loading history",
+    "empty": "No changes yet",
+    "toPlan": "Back to my study plan",
+    "actor": {
+      "STUDENT": "You",
+      "ADVISOR": "Advisor",
+      "REGISTRAR": "Registrar's office",
+      "SYSTEM": "System"
+    },
+    "action": {
+      "ADDED": "Course added",
+      "REMOVED": "Course removed",
+      "OFFERING_CHANGED": "Teacher changed",
+      "WAITLISTED": "Joined the waitlist",
+      "SUBMITTED": "Plan sent to advisor",
+      "RETURNED": "Plan returned for changes",
+      "APPROVED": "Plan approved",
+      "REASSIGNED": "Moved to another group",
+      "PREREQ_WAIVED": "Prerequisite waived by advisor"
+    },
+    "autoMandatory": "Mandatory courses for the semester were added to the plan automatically",
+    "actorRole": {
+      "STUDENT": "Student",
+      "ADVISOR": "Advisor",
+      "REGISTRAR": "Registrar's office",
+      "SYSTEM": "System"
+    }
+  },
+  "schedule": {
+    "title": "Timetable",
+    "titleTeacher": "My timetable",
+    "loading": "Loading timetable",
+    "published": "published {{date}}",
+    "weekNav": "Choose a week",
+    "prevWeek": "Previous",
+    "currentWeek": "This week",
+    "nextWeek": "Next",
+    "weekLabel": "Week {{number}} of {{total}} · {{parity}} · {{from}}–{{to}}",
+    "parity": {
+      "ODD": "odd",
+      "EVEN": "even"
+    },
+    "print": "Print / PDF",
+    "ical": {
+      "action": "Subscribe in calendar",
+      "hint": "Add the link to Google Calendar, Outlook or your phone calendar — timetable changes arrive automatically, no need to resubscribe.",
+      "copy": "Copy link",
+      "copied": "Calendar link copied"
+    },
+    "changes": {
+      "title": "Changes this week: {{count}}"
+    },
+    "change": {
+      "CANCEL": "Cancelled",
+      "MOVE": "Moved",
+      "SUBSTITUTE": "Substitute",
+      "EXTRA": "Extra"
+    },
+    "kind": {
+      "LECTURE": "Lecture",
+      "PRACTICE": "Seminar",
+      "LAB": "Lab"
+    },
+    "online": "Online",
+    "caption": "Timetable, week {{number}}",
+    "time": "Time",
+    "slot": "Period {{number}}",
+    "noLessons": "No classes",
+    "held": {
+      "HELD": "Held",
+      "NOT_HELD": "Not held"
+    }
+  },
+  "lesson": {
+    "toSchedule": "Back to timetable",
+    "loading": "Loading class",
+    "details": "Where and when",
+    "when": "Date",
+    "time": "Time",
+    "room": "Room",
+    "online": "Online class",
+    "join": "Join the class",
+    "teacher": "Teacher",
+    "groups": "Groups",
+    "students": "Students",
+    "roster": "Group lists: {{count}}",
+    "change": {
+      "CANCEL": "Class cancelled",
+      "MOVE": "Class moved",
+      "SUBSTITUTE": "Substitute teacher",
+      "movedFrom": "Was: {{date}}, period {{slot}}.",
+      "insteadOf": "Instead of: {{teacher}}."
+    },
+    "held": {
+      "title": "Attendance mark",
+      "hint": "The mark is used to count teaching load and will become the basis of the attendance register.",
+      "future": "You can mark a class as held on the day or later.",
+      "done": {
+        "HELD": "Class marked as held",
+        "NOT_HELD": "Class marked as not held"
+      }
+    }
+  },
+  "requests": {
+    "title": "Substitution requests",
+    "subtitle": "Requests go to the department. The timetable changes once the department approves them.",
+    "loading": "Loading requests",
+    "empty": "No requests yet. You can report that you cannot teach a class from its card in the timetable.",
+    "toSchedule": "Open timetable",
+    "created": "Sent",
+    "openLesson": "Open class",
+    "sentAt": "sent {{date}}",
+    "status": {
+      "PENDING": "Awaiting department",
+      "APPROVED": "Approved",
+      "REJECTED": "Rejected"
+    },
+    "kind": {
+      "SUBSTITUTE": "Substitute teacher",
+      "MOVE": "Reschedule",
+      "CANCEL": "Cancel"
+    },
+    "reason": {
+      "ILLNESS": "Illness",
+      "BUSINESS_TRIP": "Business trip",
+      "CONFERENCE": "Conference",
+      "OTHER": "Other"
+    },
+    "form": {
+      "title": "Report that you cannot teach",
+      "hint": "The request goes to the department. Until the department approves it, the class stays in the timetable.",
+      "kind": "What is needed",
+      "reason": "Reason",
+      "comment": "Comment for the department",
+      "commentHint": "For example, who could substitute, or a convenient time to reschedule.",
+      "commentRequired": "Describe the reason — the department cannot decide without it",
+      "submit": "Send to department",
+      "done": "Request sent to the department"
+    },
+    "decision": {
+      "substitute": "The department assigned a substitute: {{name}}",
+      "moved": "The department moved the class to {{date}}, period {{slot}}",
+      "rejected": "The department rejected the request: {{comment}}",
+      "cancelled": "The department cancelled the class"
+    }
+  },
+  "board": {
+    "loading": "Loading display",
+    "room": "Room"
+  }
+}

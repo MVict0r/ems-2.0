@@ -1,0 +1,418 @@
+{
+  "nav": {
+    "dashboard": "Dashboard",
+    "applications": "Applications",
+    "applicants": "Applicant records",
+    "results": "UNT and CT results",
+    "exams": "University exams",
+    "appeals": "Appeals",
+    "ranking": "Competition lists",
+    "orders": "Orders",
+    "contracts": "Contracts",
+    "payments": "Payments",
+    "queue": "Electronic queue",
+    "international": "International applicants",
+    "reports": "Reports",
+    "campaigns": "Admission campaigns",
+    "catalogs": "Reference data",
+    "notifications": "Notifications",
+    "users": "Users and roles",
+    "integrations": "Integrations",
+    "audit": "Audit log",
+    "advisorPlans": "Group study plans",
+    "planReview": "Student study plan",
+    "registrationMonitor": "Registration monitor",
+    "schedulePanel": "Semester panel",
+    "scheduleGrid": "Timetable grid",
+    "scheduleConflicts": "Conflicts",
+    "departmentOfferings": "Department sections",
+    "departmentWorkload": "Teaching load",
+    "departmentChanges": "Substitution requests",
+    "departmentReview": "Timetable review"
+  },
+  "group": {
+    "admission": "Admission",
+    "finance": "Finance",
+    "queue": "Queue",
+    "administration": "Administration",
+    "registration": "Course registration",
+    "schedule": "Timetable",
+    "department": "Department"
+  },
+  "plans": {
+    "title": "Study plans of group {{group}}",
+    "subtitle": "Review the plans students have sent and approve them or return them with a comment.",
+    "loading": "Loading group plans",
+    "summary": "Group summary",
+    "notStarted": "Not started",
+    "filter": "Status",
+    "filterAll": "All statuses",
+    "approveReady": "Approve ready plans ({{count}})",
+    "approveReadyTitle": "Approve study plans without issues: {{count}}?",
+    "approveReadyDescription": "Only plans awaiting approval with no errors will be approved. Students get a notification; further changes are possible only during add/drop.",
+    "approveReadyConfirm": "Approve",
+    "approvedMany": "Study plans approved: {{count}}",
+    "found": "Students listed: {{count}}",
+    "empty": "No students with this status",
+    "submittedAt": "sent {{date}}",
+    "issues": "Check",
+    "noIssues": "No issues",
+    "errors": "Errors: {{count}}",
+    "warnings": "Warnings: {{count}}",
+    "review": "Review",
+    "open": "Open"
+  },
+  "review": {
+    "toList": "Back to group list",
+    "loading": "Loading study plan",
+    "submitted": "Sent to advisor",
+    "notSubmitted": "Not sent yet",
+    "term": "Semester",
+    "returnedWith": "Plan returned to the student with a comment",
+    "checks": "Rule check",
+    "noIssues": "No issues",
+    "items": "Courses",
+    "history": "Change history",
+    "decision": "Advisor decision",
+    "cancel": "Cancel",
+    "commentRequired": "Write a comment — the student will see it in their study plan",
+    "waive": {
+      "action": "Waive prerequisite",
+      "hint": "The student will be able to take the course without the prerequisite. The comment goes into the plan history.",
+      "comment": "Justification",
+      "confirm": "Waive prerequisite",
+      "done": "Prerequisite waived"
+    },
+    "approve": {
+      "action": "Approve study plan",
+      "title": "Approve {{name}}'s study plan?",
+      "description": "Once approved, the student can change the plan only during add/drop.",
+      "blocked": "You can approve once the plan has no errors: waive the prerequisite or return the plan for changes.",
+      "done": "Study plan approved"
+    },
+    "return": {
+      "action": "Return for changes",
+      "title": "Return the study plan for changes",
+      "description": "The plan becomes a draft again; the student sees your comment and can fix their choice.",
+      "comment": "What to fix",
+      "commentHint": "Be specific: which course to replace or what to add.",
+      "confirm": "Return to student",
+      "done": "Study plan returned to the student"
+    }
+  },
+  "monitor": {
+    "title": "Registration monitor",
+    "loading": "Loading monitor",
+    "windowOpen": "registration window open until {{date}}",
+    "windowClosed": "registration window closed",
+    "funnel": {
+      "title": "Registration funnel · students: {{total}}",
+      "notStarted": "Not started",
+      "draft": "Draft",
+      "submitted": "Awaiting approval",
+      "approved": "Approved"
+    },
+    "offerings": {
+      "title": "Department sections",
+      "hint": "Groups below the minimum are closed for low demand (R-09): students are moved to another teacher of the same course."
+    },
+    "filter": {
+      "label": "Show",
+      "risk": "Below minimum only",
+      "all": "All sections"
+    },
+    "found": "Sections: {{count}}",
+    "noRisk": "All groups reached the minimum.",
+    "state": {
+      "closed": "Closed for low demand",
+      "below": "Below minimum",
+      "full": "Full",
+      "open": "Enrolling"
+    },
+    "minimum": "Minimum to open: {{min}}",
+    "close": {
+      "target": "Move students to",
+      "noReassign": "Do not move — students choose again",
+      "nobody": "nobody",
+      "action": "Close for low demand",
+      "title": "Close the group for low demand?",
+      "description": "Enrolled students ({{count}}) will be moved to: {{target}}. They will be notified; seats in this group cannot be restored.",
+      "done": "Group closed. Moved: {{reassigned}}, seats released: {{released}}"
+    }
+  },
+  "dispatch": {
+    "status": {
+      "DRAFT": "Draft",
+      "REVIEW": "Department review",
+      "APPROVED": "Approved",
+      "PUBLISHED": "Published",
+      "ACTIVE": "Active",
+      "ARCHIVED": "Archived"
+    },
+    "roomKind": {
+      "LECTURE": "Lecture hall",
+      "SEMINAR": "Seminar room",
+      "COMPUTER": "Computer lab",
+      "LAB": "Laboratory",
+      "GYM": "Gym",
+      "STUDIO": "Studio"
+    },
+    "panel": {
+      "title": "Semester timetable",
+      "loading": "Loading timetable version",
+      "noVersion": "There is no timetable version yet.",
+      "version": "version {{number}}",
+      "lifecycle": "Version lifecycle",
+      "coverage": "Coverage",
+      "placed": "Classes placed",
+      "placedSpoken": "{{placed}} of {{total}} placed",
+      "hard": "Hard violations",
+      "hardHint": "Publishing is blocked while there are violations",
+      "soft": "Soft constraint penalty",
+      "softHint": "Gaps, transfers, balance: the closer to zero, the better",
+      "updated": "Updated",
+      "toGrid": "Open grid",
+      "toConflicts": "Conflicts (hard: {{count}})"
+    },
+    "solver": {
+      "title": "Solver",
+      "hint": "Builds a draft automatically. Pinned classes stay put; the rest are placed with no hard violations and the lowest penalty.",
+      "limitLabel": "Time limit",
+      "limit": {
+        "30": "30 seconds",
+        "60": "1 minute",
+        "300": "5 minutes"
+      },
+      "run": "Generate draft",
+      "started": "Solver started",
+      "progress": "Progress",
+      "score": "Hard violations: {{hard}} · penalty: {{soft}}",
+      "stop": "Stop and keep the best",
+      "stopped": "Solver stopped; the best solution found was kept",
+      "result": {
+        "DONE": "Solver finished",
+        "STOPPED": "Solver stopped — the best solution found was kept"
+      },
+      "locked": "The version is under review or approved — the solver runs on drafts only."
+    },
+    "actions": {
+      "title": "Review and publishing",
+      "reviews": "Departments approved: {{approved}} of {{total}}",
+      "blocked": "Fix the hard violations first: {{count}}. They are listed under “Conflicts”.",
+      "submit-review": {
+        "action": "Send to departments for review",
+        "title": "Send the draft to departments?",
+        "description": "Departments will see their teachers' timetables and leave comments. The draft cannot be edited during review.",
+        "done": "Draft sent to departments for review"
+      },
+      "approve": {
+        "action": "Approve timetable",
+        "title": "Approve this timetable version?",
+        "description": "Once approved, the version can be published. Changes require a new version.",
+        "done": "Timetable approved"
+      },
+      "publish": {
+        "action": "Publish",
+        "title": "Publish the timetable?",
+        "description": "Students and teachers will see the timetable and be notified about their classes. Further changes go through substitutions and rescheduling.",
+        "done": "Timetable published"
+      },
+      "waiting": {
+        "DRAFT": "The timetable scheduler is preparing the draft.",
+        "REVIEW": "The version is under review. The registrar's office approves it.",
+        "APPROVED": "The version is approved. The registrar's office publishes it.",
+        "PUBLISHED": "The version is published. Changes go through substitutions and rescheduling.",
+        "ACTIVE": "The semester is under way.",
+        "ARCHIVED": "The version is archived."
+      },
+      "reviewsPending": "You can approve once all departments have reviewed it: {{approved}} of {{total}} so far."
+    },
+    "grid": {
+      "title": "Timetable grid",
+      "loading": "Loading grid",
+      "toPanel": "Back to semester panel",
+      "viewLabel": "View",
+      "view": {
+        "GROUP": "By group",
+        "TEACHER": "By teacher",
+        "ROOM": "By room"
+      },
+      "entity": {
+        "GROUP": "Group",
+        "TEACHER": "Teacher",
+        "ROOM": "Room"
+      },
+      "caption": "Class grid: {{entity}}",
+      "unplaced": "Not placed: {{count}}",
+      "selectHint": "Select a class in the grid to see its conflicts and find a free slot and room. With a mouse you can drag a class to another cell.",
+      "moved": "{{name}} moved: {{day}}, period {{slot}}, {{room}}",
+      "readOnly": {
+        "title": "The grid is read-only",
+        "locked": "The version is not a draft, or the solver is running.",
+        "noRight": "The timetable scheduler edits the grid."
+      }
+    },
+    "lesson": {
+      "close": "Close",
+      "when": "When",
+      "room": "Room",
+      "needs": "Room needed",
+      "teacher": "Teacher",
+      "groups": "Groups",
+      "unplaced": "Not placed",
+      "noRoom": "no room",
+      "noConflicts": "No conflicts",
+      "findSlot": "Find a slot",
+      "freeSlots": "Free slots",
+      "freeRooms": "Suitable free rooms",
+      "searching": "Searching…",
+      "noSlots": "No free slots: the teacher or groups are busy at every time.",
+      "pin": "Pin",
+      "unpin": "Unpin",
+      "pinned": "Class pinned — the solver will not move it",
+      "unpinned": "Class unpinned",
+      "pinnedFlag": "Pinned",
+      "pinnedHint": "A pinned class cannot be moved. Unpin it to move it.",
+      "movable": "Movable"
+    },
+    "conflict": {
+      "H-01": "{{teacher}}: two classes at once — {{day}}, period {{slot}}",
+      "H-02": "Group {{group}}: two classes at once — {{day}}, period {{slot}}",
+      "H-03": "Room {{room}} is double-booked — {{day}}, period {{slot}}",
+      "H-04": "Room {{room}}: {{capacity}} seats for {{students}} students",
+      "H-05": "Room {{room}} is the wrong type",
+      "H-07": "The class is not placed in the grid",
+      "S-01": "Group {{group}}: gaps in the timetable — {{day}}, periods: {{count}}",
+      "S-02": "{{teacher}}: gaps in the timetable — {{day}}, periods: {{count}}",
+      "S-08": "Group {{group}}: two classes of the same course on one day — {{day}}"
+    },
+    "conflicts": {
+      "title": "Timetable conflicts",
+      "subtitle": "Hard violations block publishing; soft ones are penalties the solver tries to reduce.",
+      "loading": "Loading conflicts",
+      "blocks": "Publishing blocked",
+      "clean": "Ready to publish",
+      "filter": {
+        "label": "Show",
+        "ALL": "All",
+        "HARD": "Hard only",
+        "SOFT": "Soft only"
+      },
+      "found": "Found: {{count}}",
+      "none": "No conflicts.",
+      "penalty": "penalty {{value}}",
+      "severity": {
+        "HARD": "hard",
+        "SOFT": "soft"
+      }
+    }
+  },
+  "department": {
+    "offerings": {
+      "title": "Department sections",
+      "loading": "Loading sections",
+      "demand": "Department demand",
+      "seats": "Enrolled / seats",
+      "belowMin": "Groups below minimum",
+      "withoutTeacher": "Courses without a teacher",
+      "credits": "Credits: {{count}}",
+      "add": "Assign a teacher",
+      "edit": "Edit",
+      "range": "{{min}}–{{max}} seats",
+      "none": {
+        "title": "No teacher assigned",
+        "description": "Students see the course in the catalogue but cannot choose it."
+      },
+      "form": {
+        "addTitle": "New section",
+        "editTitle": "Edit section",
+        "teacher": "Teacher",
+        "min": "Minimum to open",
+        "minHint": "If fewer students enrol, the group is closed for low demand (R-09).",
+        "max": "Seats in the group",
+        "minError": "The minimum must be a whole number from 1",
+        "maxError": "Seats must be a whole number not below the minimum and not above 300",
+        "takenError": "{{taken}} students are already enrolled — seats cannot be fewer",
+        "create": "Assign",
+        "save": "Save",
+        "created": "Section assigned — students already see it when choosing a teacher",
+        "saved": "Section updated"
+      }
+    },
+    "workload": {
+      "title": "Teaching load",
+      "subtitle": "Planned classroom hours for the semester from the department's sections, compared with the norm.",
+      "loading": "Loading teaching load",
+      "over": "Over the norm: {{count}}",
+      "allOk": "All teachers are within the norm",
+      "planned": "Planned / norm",
+      "hours": "{{value}} h",
+      "spoken": "Planned load {{total}} hours against a norm of {{norm}}",
+      "lecture": "Lectures",
+      "practice": "Seminars",
+      "lab": "Labs",
+      "excess": "{{value}} h over",
+      "inNorm": "Within the norm",
+      "groups": "groups: {{count}}",
+      "noOfferings": "No sections this semester"
+    },
+    "changes": {
+      "title": "Substitution requests",
+      "subtitle": "An approved substitution or reschedule appears in students' timetables and on the displays right away.",
+      "loading": "Loading requests",
+      "filter": {
+        "label": "Show",
+        "PENDING": "Awaiting decision",
+        "ALL": "All requests"
+      },
+      "found": "Requests: {{count}}",
+      "empty": "No requests awaiting a decision.",
+      "teacher": "Teacher",
+      "substitute": "Who will teach",
+      "approveSubstitute": "Approve substitution",
+      "newDay": "New day",
+      "newSlot": "New period",
+      "approveMove": "Approve reschedule",
+      "approveCancel": "Approve cancellation",
+      "cancelTitle": "Cancel the class?",
+      "cancelDescription": "Students in the group will be notified and the class will be marked as cancelled in the timetable.",
+      "reject": "Reject",
+      "rejectComment": "Reason for rejection",
+      "rejectHint": "The teacher will see it in their requests.",
+      "approved": "Decision made, timetable updated",
+      "rejected": "Request rejected",
+      "decision": {
+        "substitute": "Substitute: taught by {{name}}",
+        "moved": "Moved to {{date}}, period {{slot}}",
+        "rejected": "Rejected: {{comment}}",
+        "cancelled": "Class cancelled"
+      }
+    },
+    "review": {
+      "title": "Timetable review",
+      "loading": "Loading the version under review",
+      "notInReview": {
+        "title": "The version is not under review right now"
+      },
+      "ours": "Department decision",
+      "allDepartments": "Departments approved",
+      "lessons": "Classes of the department's teachers",
+      "status": {
+        "PENDING": "Awaiting decision",
+        "APPROVED": "Approved",
+        "REMARKS": "Has comments"
+      },
+      "yourRemarks": "Department comments",
+      "decision": "Department decision",
+      "approve": "Approve",
+      "approveTitle": "Approve this timetable version?",
+      "approveDescription": "The registrar's office can approve it once all departments have.",
+      "remarks": "Leave comments",
+      "remarksLabel": "Comments for the scheduler",
+      "remarksHint": "Be specific: which class, what is wrong and what would be better.",
+      "sendRemarks": "Send comments",
+      "approved": "Version approved by the department",
+      "remarked": "Comments sent to the scheduler"
+    }
+  }
+}
