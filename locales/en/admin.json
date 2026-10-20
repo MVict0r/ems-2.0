@@ -28,7 +28,10 @@
     "departmentOfferings": "Department sections",
     "departmentWorkload": "Teaching load",
     "departmentChanges": "Substitution requests",
-    "departmentReview": "Timetable review"
+    "departmentReview": "Timetable review",
+    "cohorts": "Streams and groups",
+    "termSettings": "Semester settings",
+    "rooms": "Rooms"
   },
   "group": {
     "admission": "Admission",
@@ -37,7 +40,8 @@
     "administration": "Administration",
     "registration": "Course registration",
     "schedule": "Timetable",
-    "department": "Department"
+    "department": "Department",
+    "semester": "Semester"
   },
   "plans": {
     "title": "Study plans of group {{group}}",
@@ -284,7 +288,9 @@
       "H-07": "The class is not placed in the grid",
       "S-01": "Group {{group}}: gaps in the timetable — {{day}}, periods: {{count}}",
       "S-02": "{{teacher}}: gaps in the timetable — {{day}}, periods: {{count}}",
-      "S-08": "Group {{group}}: two classes of the same course on one day — {{day}}"
+      "S-08": "Group {{group}}: two classes of the same course on one day — {{day}}",
+      "H-06": "Time unavailable ({{reason}}) — {{day}}, period {{slot}}",
+      "S-04": "{{teacher}}: unpreferred time — {{day}}, period {{slot}}"
     },
     "conflicts": {
       "title": "Timetable conflicts",
@@ -305,6 +311,17 @@
         "HARD": "hard",
         "SOFT": "soft"
       }
+    },
+    "task": {
+      "title": "Timetable task",
+      "none": "The registrar's office has not sent streams and groups yet.",
+      "received": "Received from the registrar's office on {{date}}",
+      "units": "Teaching units",
+      "lessons": "Classes per week",
+      "kinds": "Composition",
+      "kindsValue": "{{streams}} streams, {{groups}} groups, {{subgroups}} subgroups",
+      "rooms": "Rooms needed",
+      "demoNote": "In the demo the grid below uses a separate data set: a timetable without overlaps cannot be built from the sample groups."
     }
   },
   "department": {
@@ -413,6 +430,231 @@
       "sendRemarks": "Send comments",
       "approved": "Version approved by the department",
       "remarked": "Comments sent to the scheduler"
+    }
+  },
+  "cohorts": {
+    "title": "Streams and groups",
+    "loading": "Loading streams and groups",
+    "builtAt": "formed {{date}}",
+    "status": {
+      "NONE": "Not formed",
+      "BUILT": "Formed",
+      "SENT": "Sent to scheduler"
+    },
+    "sent": {
+      "title": "Task sent to the scheduler on {{date}}",
+      "description": "If you change a group or its teacher, the task has to be sent again."
+    },
+    "skipped": {
+      "title": "Not re-formed because of manual edits: {{count}}",
+      "description": "These sections kept their manual changes. You can re-form a specific section from its card."
+    },
+    "summary": {
+      "streams": "Streams",
+      "groups": "Seminar groups",
+      "subgroups": "Lab subgroups",
+      "students": "Students assigned",
+      "oversize": "Over the limit: {{count}}"
+    },
+    "build": {
+      "title": "Splitting parameters",
+      "hint": "Students are sorted by academic group, so groups stay together where possible (§4.6).",
+      "action": "Form streams and groups",
+      "rebuild": "Form again",
+      "rebuildTitle": "Form streams and groups again?",
+      "rebuildDescription": "Sections edited by hand stay as they are. The rest are split again with the new parameters.",
+      "done": "Streams and groups formed"
+    },
+    "params": {
+      "stream": "Maximum stream size",
+      "streamHint": "Larger streams are split into two or more.",
+      "streamError": "A whole number not below the group size and not above 300",
+      "practice": "Seminar group size",
+      "practiceError": "A whole number not below the subgroup size",
+      "lab": "Lab subgroup size",
+      "labError": "A whole number from 5"
+    },
+    "send": {
+      "action": "Send to scheduler",
+      "title": "Send the timetable task?",
+      "description": "The scheduler receives the list of streams, groups and subgroups with the number of classes and room requirements.",
+      "done": "Task sent to the scheduler"
+    },
+    "offering": {
+      "students": "Students: {{count}}",
+      "empty": "No enrolments",
+      "rebuild": "Re-form section",
+      "rebuildTitle": "Re-form this section?",
+      "rebuildDescription": "Manual changes to groups and teachers in this section will be lost.",
+      "rebuilt": "Section re-formed"
+    },
+    "manual": "Edited by hand",
+    "kind": {
+      "STREAM": "Stream",
+      "GROUP": "Group",
+      "SUBGROUP": "Subgroup"
+    },
+    "unit": {
+      "hours": "{{count}} h per week",
+      "groups": "Academic groups: {{groups}}",
+      "size": "Size / limit",
+      "sizeSpoken": "{{count}} students with a limit of {{limit}}",
+      "hide": "Collapse",
+      "edit": "Members and teacher ({{count}})",
+      "teacher": "Teacher",
+      "assign": "Assign",
+      "assigned": "Teacher of {{code}} changed",
+      "noSiblings": "There are no other units at this level to move students to.",
+      "students": "Students",
+      "moveTo": "Move {{name}} to",
+      "move": "Move",
+      "moved": "{{name}} is now in {{code}}"
+    }
+  },
+  "term": {
+    "title": "Semester settings",
+    "loading": "Loading semester settings",
+    "weeksCount": "weeks: {{count}}",
+    "updated": "updated {{date}}",
+    "save": "Save",
+    "dateHint": "DD.MM.YYYY",
+    "dateError": "Enter a date as DD.MM.YYYY",
+    "windows": {
+      "title": "Registration windows",
+      "hint": "Outside a window students cannot change their study plan (R-01). Changes are visible to students at once.",
+      "kind": {
+        "MAIN": "Main registration",
+        "FIRST_YEAR": "First-year registration",
+        "ADD_DROP": "Add/drop"
+      },
+      "courses": "Years: {{courses}}",
+      "state": {
+        "open": "Open",
+        "upcoming": "Upcoming",
+        "closed": "Closed"
+      },
+      "from": "Start",
+      "to": "End",
+      "orderError": "The window ends before it starts",
+      "saved": "Window “{{name}}” saved"
+    },
+    "credits": {
+      "title": "Credits per study plan",
+      "hint": "Range for bachelor's students (R-03). Exceeding it requires the registrar's permission.",
+      "min": "Minimum",
+      "max": "Maximum",
+      "minError": "A whole number from 1",
+      "maxError": "A whole number not below the minimum and not above 40",
+      "saved": "Credit range: {{min}}–{{max}}"
+    },
+    "slots": {
+      "title": "Class periods",
+      "hint": "Periods follow in order and do not overlap. Times change in the scheduler's grid at once.",
+      "starts": "Start",
+      "ends": "End",
+      "timeError": "Time as HH:MM",
+      "saved": "Class periods saved"
+    },
+    "weights": {
+      "title": "Soft constraint weights",
+      "hint": "The higher the weight, the harder the solver avoids the violation. A disabled constraint is ignored (§5.3).",
+      "code": {
+        "S-01": "Gaps in group timetables",
+        "S-02": "Gaps in teacher timetables",
+        "S-04": "Teachers' time preferences",
+        "S-08": "Two classes of one course on a day"
+      },
+      "weight": "Weight of {{code}}",
+      "enabled": "Apply",
+      "error": "A whole number from 0 to 100",
+      "saved": "Constraint weights saved"
+    },
+    "weeks": {
+      "title": "Semester weeks",
+      "biweekly": "Two-week cycle: weeks alternate odd and even.",
+      "single": "A single week without alternation.",
+      "number": "Week",
+      "dates": "Dates",
+      "parity": "Parity",
+      "kindLabel": "Week type",
+      "kind": {
+        "STUDY": "Teaching",
+        "MIDTERM": "Midterm",
+        "EXAM": "Exams",
+        "HOLIDAY": "Holiday"
+      },
+      "kindFor": "Type of week {{number}}",
+      "save": "Save changes ({{count}})",
+      "saved": "Week types saved"
+    }
+  },
+  "rooms": {
+    "title": "Rooms",
+    "subtitle": "Rooms, how busy they are, and times when rooms or teachers cannot be used.",
+    "loading": "Loading rooms",
+    "add": "Add room",
+    "edit": "Edit",
+    "editRoom": "Edit room {{room}}",
+    "saved": "Room {{room}} saved",
+    "created": "Room {{room}} added",
+    "capacity": "seats: {{count}}",
+    "building": "Building",
+    "number": "Number",
+    "numberError": "Up to 8 letters and digits",
+    "kind": "Type",
+    "capacityLabel": "Seats",
+    "capacityError": "A whole number from 1 to 500",
+    "capacityHint": "If seats drop below the students in a class, the grid shows violation H-04.",
+    "equipmentLabel": "Equipment",
+    "equipment": {
+      "PROJECTOR": "Projector",
+      "PC": "Computers",
+      "LAB_BENCH": "Lab benches",
+      "SMARTBOARD": "Smart board",
+      "SPORTS": "Sports equipment"
+    },
+    "slots": "Periods",
+    "slotsHint": "Nothing ticked means the whole day.",
+    "allDay": "whole day",
+    "slotList": "periods {{slots}}",
+    "none": "No entries.",
+    "remove": "Remove",
+    "removeEntry": "Remove entry: {{what}}",
+    "removed": "Entry removed",
+    "weekday": "Day of week",
+    "reason": "Reason",
+    "reasonError": "Give a reason",
+    "load": {
+      "title": "Room usage",
+      "caption": "Room usage by day of the week: periods taken out of the day",
+      "room": "Room",
+      "actions": "Actions",
+      "state": {
+        "free": "free",
+        "partial": "partly",
+        "full": "full",
+        "blocked": "unavailable"
+      }
+    },
+    "unavailability": {
+      "title": "Room unavailability",
+      "hint": "Repairs, events. The solver does not place classes there and “Find a room” does not offer it (H-06).",
+      "add": "Add unavailability",
+      "submit": "Add",
+      "added": "Room unavailability added"
+    },
+    "teachers": {
+      "title": "Teacher availability",
+      "hint": "Hard unavailability is constraint H-06. A preference is penalty S-04 the solver tries to respect.",
+      "add": "Add entry",
+      "submit": "Add",
+      "added": "Availability entry added",
+      "teacher": "Teacher",
+      "kindLabel": "Kind",
+      "kind": {
+        "HARD_UNAVAILABLE": "Cannot teach",
+        "SOFT_UNPREFERRED": "Prefers not"
+      }
     }
   }
 }

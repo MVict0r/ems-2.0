@@ -185,6 +185,41 @@
       "title": "Not all departments have approved",
       "description": "A version can be approved once all departments have reviewed it.",
       "recommendation": "Wait for the review, or contact the departments that left comments."
+    },
+    "COH_NOT_SIBLING": {
+      "title": "Cannot move there",
+      "description": "A student can only be moved to a neighbouring group or subgroup at the same level.",
+      "recommendation": "Choose a group from the list next to the student."
+    },
+    "COH_STREAM_TEACHER": {
+      "title": "The department assigns the stream lecturer",
+      "description": "The stream's teacher is set in the department's section.",
+      "recommendation": "Change the section under Department, or assign a teacher to a group."
+    },
+    "COH_NOT_BUILT": {
+      "title": "Streams are not formed yet",
+      "description": "Only formed streams and groups can be sent to the scheduler.",
+      "recommendation": "First press “Form streams and groups”."
+    },
+    "TERM_WINDOW_DATES": {
+      "title": "Invalid window dates",
+      "description": "The registration window ends before it starts.",
+      "recommendation": "Check the dates and save again."
+    },
+    "TERM_CREDITS_RANGE": {
+      "title": "Invalid credit range",
+      "description": "The minimum is above the maximum, or values are out of range.",
+      "recommendation": "Use a minimum from 1 and a maximum not above 40."
+    },
+    "TERM_SLOTS_OVERLAP": {
+      "title": "Periods overlap",
+      "description": "A period starts before the previous one ends, or ends before it starts.",
+      "recommendation": "Fix the times so periods follow in order."
+    },
+    "ROOM_EXISTS": {
+      "title": "This room already exists",
+      "description": "The building already has a room with this number.",
+      "recommendation": "Edit the existing room or use another number."
     }
   }
 }
